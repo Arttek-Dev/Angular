@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Aula2.css">
+    <title>Aula 02</title>
+</head>
+
+<body>
+    <h1>Aula 02 JS e DOM</h1>
+    <script>
+        var N1 = parseFloat(prompt("Digite o número"))
+        var N3 = prompt("Digite a operação")
+        var N2 = parseFloat(prompt("Digite o número"))
+
+        function soma(N1, N2) {
+            var rsoma = N1 + N2
+            alert(rsoma)
+        }
+        function sub(N1, N2) {
+            var rsub = N1 - N2
+            alert(rsub)
+        }
+        function mult(N1, N2) {
+            var rmult = N1 * N2
+            alert(rmult)
+        }
+        function div(N1, N2) {
+            var rdiv = N1 / N2
+            alert(rdiv)
+        }
+        if (N3 == "+") {
+            soma(N1, N2)
+        }
+        else if (N3 == "-") {
+            sub(N1, N2)
+        }
+        else if (N3 == "*") {
+            mult(N1, N2)
+        }
+        else if (N3 == "/") {
+            div(N1, N2)
+        }
+        else {
+            alert("Digite Corretamente")
+        }
+    </script>
+
+
+</body>
+
+</html>

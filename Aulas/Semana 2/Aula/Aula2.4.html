@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Aula2.css">
+    <title>Aula 02</title>
+</head>
+
+<body>
+    <h1>Aula 02 JS e DOM</h1>
+
+    <script>
+        var valores_pa = prompt("Digite o termo inicial, a razao e qtde de itens");
+        valores_pa = valores_pa.split(" ");
+        var termo = parseFloat(valores_pa[0]);
+        var razao = parseFloat(valores_pa[1]);
+        var qtde = parseFloat(valores_pa[2]);
+
+
+        for (i = 0; i < qtde; i++) {
+
+            console.log(termo);
+            termo = termo + razao;
+
+        }
+    </script>
+</body>
+
+</html>
